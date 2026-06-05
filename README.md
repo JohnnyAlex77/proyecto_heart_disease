@@ -186,4 +186,4 @@ Este proyecto es de carácter académico. El código está disponible para fines
 |Recurso|Enlace|
 |---|---|
 |Repositorio GitHub|[https://github.com/JohnnyAlex77/heart_disease](https://github.com/JohnnyAlex77/heart_disease)|
-|Google Colab|[Insertar enlace del notebook interactivo]|
+|Google Colab|https://colab.research.google.com/drive/13FaV9PLAt8rbL323A607IQ6SHEMSirqX?usp=sharing|
