@@ -56,7 +56,7 @@ heart_disease/
 ├── heart_disease_model.pkl # Modelo entrenado (Random Forest)
 └── scaler.pkl # Escalador para normalizar datos
 
-```text
+text
 
 ## Instalación y Ejecución
 
@@ -66,14 +66,11 @@ heart_disease/
 
 ### Paso 1: Clonar el repositorio
 
-```bash
 git clone https://github.com/JohnnyAlex77/heart_disease.git
 cd heart_disease
-Paso 2: Instalar dependencias
-bash
+### Paso 2: Instalar dependencias
 pip install -r requirements.txt
-Paso 3: Ejecutar el modelo
-bash
+### Paso 3: Ejecutar el modelo
 python heart_disease_model.py
 Visualizaciones Generadas
 El script genera automáticamente 4 visualizaciones:
@@ -83,15 +80,17 @@ Archivo	Descripción
 2_matriz_confusion.png	Matriz de confusión del modelo Random Forest
 3_curva_roc.png	Curva ROC con valor AUC
 4_importancia_variables.png	Ranking de variables predictoras
-🧪 Prueba con un Paciente Nuevo
+
+### Prueba con un Paciente Nuevo
 El código incluye un ejemplo de predicción para un nuevo paciente:
 
-python
+
 # Paciente de ejemplo: 55 años, hombre, colesterol alto, presión elevada
 paciente_ejemplo = [[55, 1, 2, 145, 280, 0, 1, 150, 0, 1.5, 1, 0, 2]]
 
 # El modelo devuelve: ALTO RIESGO (probabilidad: ~85%)
-📊 Descripción del Dataset
+
+Descripción del Dataset
 El dataset utilizado es una versión ampliada del "Heart Disease Dataset" del repositorio UCI, con 1000 registros y 14 columnas:
 
 Variable	Descripción	Rango
@@ -109,7 +108,8 @@ slope	Pendiente del segmento ST	0-2
 ca	Número de vasos principales	0-3
 thal	Tipo de talasemia	3, 6, 7
 target	Presencia de enfermedad (1=Sí, 0=No)	0, 1
-🤖 Modelos Comparados
+
+Modelos Comparados
 Se entrenaron y compararon 4 algoritmos de clasificación:
 
 Modelo	Accuracy	AUC-ROC
@@ -119,7 +119,7 @@ Random Forest	90.16%	0.94
 SVM	81.97%	0.85
 Random Forest fue seleccionado por: mayor precisión, robustez ante datos mixtos y capacidad de identificar variables importantes.
 
-⚠️ Limitaciones del Modelo
+Limitaciones del Modelo
 Tamaño muestral reducido (1000 pacientes) → puede no generalizar bien
 
 Sesgo de género (~68% hombres) → subrepresenta enfermedad en mujeres
@@ -128,20 +128,20 @@ Origen geográfico limitado (datos principalmente de Cleveland, EE.UU.)
 
 Falta de variables clave (tabaquismo, diabetes, IMC, antecedentes familiares)
 
-💡 Recomendaciones para Uso Clínico
+Recomendaciones para Uso Clínico
 Acción	Prioridad
 Validación externa con datos locales	Alta
 Ajuste de umbral a 0.3 para aumentar sensibilidad	Alta
 Estudio prospectivo en centro de salud	Media
 Incorporar más variables (tabaquismo, diabetes)	Alta
-🔮 Perspectivas Futuras
+Perspectivas Futuras
 Corto plazo: Herramienta de apoyo en atención primaria
 
 Mediano plazo: Aplicación web con Streamlit
 
 Largo plazo: Integración en historias clínicas electrónicas
 
-📚 Bibliografía
+Bibliografía
 Organización Mundial de la Salud (OMS). (2021). Enfermedades cardiovasculares (ECV).
 
 UCI Machine Learning Repository. (1989). Heart Disease Data Set.
@@ -152,7 +152,7 @@ Raschka, S. (2018). Model Evaluation, Model Selection, and Algorithm Selection i
 
 Janowicz, A. (2020). A guide to Scikit-learn's StandardScaler. Towards Data Science.
 
-👥 Autores
+Autores
 Nombre	Rol
 Johnny Valladares	Código, configuración de Colab, entrenamiento de modelos
 Jaime Jiménez	Análisis clínico, interpretación de resultados
@@ -162,10 +162,10 @@ Asignatura: Tendencias de Inteligencia Artificial Aplicada
 Docente: Claudio Ariel Valdebenito López
 *Fecha: 06-06-2026*
 
-📄 Licencia
+Licencia
 Este proyecto es de carácter académico. El código está disponible para fines educativos y de investigación.
 
-🔗 Enlaces
+Enlaces
 Repositorio GitHub: https://github.com/JohnnyAlex77/heart_disease
 
 Google Colab: [Enlace al notebook interactivo]
