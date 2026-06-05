@@ -121,6 +121,37 @@ for modelo, acc in resultados.items():
     print(f"{modelo:20} : {acc:.4f} ({acc*100:.2f}%)")
 
 # ============================================
+# FIGURA 3: GRÁFICO DE COMPARATIVA DE MODELOS
+# ============================================
+print("\n[4.5/9] Generando gráfico comparativo de modelos...")
+
+# Datos para el gráfico (usando los resultados que ya calculaste)
+modelos = list(resultados.keys())
+accuracy_values = list(resultados.values())
+
+# Crear gráfico de barras
+plt.figure(figsize=(10, 6))
+bars = plt.bar(modelos, accuracy_values, color=['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728'])
+plt.ylabel('Accuracy (Precisión)')
+plt.xlabel('Modelo')
+plt.title('Comparativa de Accuracy entre Modelos')
+plt.ylim(0.7, 1.0)  # Escala de 70% a 100%
+
+# Agregar etiquetas con los valores sobre cada barra
+for bar, acc in zip(bars, accuracy_values):
+    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.005, 
+             f'{acc:.4f} ({acc*100:.2f}%)', ha='center', va='bottom', fontsize=10)
+
+# Agregar línea de referencia al 90%
+plt.axhline(y=0.90, color='gray', linestyle='--', alpha=0.7, label='Referencia 90%')
+plt.legend()
+
+plt.tight_layout()
+plt.savefig('3_comparativa_modelos.png', dpi=150)
+plt.show()
+print("Gráfico guardado: 3_comparativa_modelos.png")
+
+# ============================================
 # 5. OPTIMIZAR RANDOM FOREST
 # ============================================
 print("\n[5/9] Optimizando Random Forest...")
