@@ -85,12 +85,13 @@ Archivo	Descripción
 El código incluye un ejemplo de predicción para un nuevo paciente:
 
 
-# Paciente de ejemplo: 55 años, hombre, colesterol alto, presión elevada
+### Paciente de ejemplo: 55 años, hombre, colesterol alto, presión elevada
 paciente_ejemplo = [[55, 1, 2, 145, 280, 0, 1, 150, 0, 1.5, 1, 0, 2]]
 
-# El modelo devuelve: ALTO RIESGO (probabilidad: ~85%)
+### El modelo devuelve: ALTO RIESGO (probabilidad: ~85%)
 
-Descripción del Dataset
+##Descripción del Dataset
+
 El dataset utilizado es una versión ampliada del "Heart Disease Dataset" del repositorio UCI, con 1000 registros y 14 columnas:
 
 Variable	Descripción	Rango
